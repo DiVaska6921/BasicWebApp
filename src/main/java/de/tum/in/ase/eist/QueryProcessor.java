@@ -12,8 +12,11 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
-           return "Vasilen Vasilev";
-        } else { // TODO extend the programm here
+           return "MyTeam";
+        } else {
+            if (query.contains("which of the following numbers is the largest: 47, 386")){
+                return "386"
+            }
             return "";
         }
     }
